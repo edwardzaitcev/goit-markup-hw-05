@@ -70,6 +70,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list {
   margin-left: 93px;
@@ -87,7 +88,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .current {
   color: #2196f3;
 }
@@ -104,8 +107,7 @@ img {
   color: #757575;
   display: flex;
   align-items: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail-item {
   fill: currentColor;
@@ -123,8 +125,7 @@ img {
   color: #757575;
   display: flex;
   align-items: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero {
   background: #2f303a;
@@ -171,9 +172,7 @@ img {
   border-radius: 4px;
 
   border: 4px solid #2196f3;
-  transition-property: background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits-soc-list {
@@ -293,9 +292,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -350,9 +347,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-  transition-property: border, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .test-link:hover,
@@ -384,8 +379,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo {
   color: #2196f3;
@@ -402,24 +396,21 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact-mail {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact-tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact-item {
   margin-bottom: 8px;
@@ -456,6 +447,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-item:hover,
@@ -472,9 +464,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
@@ -493,6 +484,7 @@ img {
   display: flex;
   gap: 6px;
   justify-content: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-portfolio {
   width: 1200px;
@@ -580,6 +572,9 @@ img {
 }
 .card {
   display: block;
+  transition-property: background-color, transform, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover,
@@ -591,25 +586,47 @@ img {
 .brite-card {
   position: relative;
   overflow: hidden;
-  display: flex;
 }
-
+.brite-list {
+}
+.brite-list:hover .card-text {
+  transform: translateY(0);
+}
 .card-text {
   position: absolute;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  opacity: 0;
-  background-color: rgba(33, 150, 243, 0.9);
-  display: inline-block;
-  transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: auto;
+  top: 0;
   padding-top: 63px;
   padding-left: 24px;
   padding-bottom: 63px;
   padding-right: 24px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  background-color: rgba(33, 150, 243, 0.9);
+  height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
