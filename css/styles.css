@@ -647,5 +647,8 @@ img {
   cursor: pointer;
 }
 .modal-close:hover {
-  color: #212121;
+  color: #2196f3;
+}
+.modal-close:focus {
+  color: #2196f3;
 }
