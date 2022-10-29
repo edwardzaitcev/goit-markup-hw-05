@@ -646,3 +646,6 @@ img {
   justify-content: center;
   cursor: pointer;
 }
+.modal-close:hover {
+  color: #212121;
+}
